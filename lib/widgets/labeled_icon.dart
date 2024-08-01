@@ -18,26 +18,24 @@ base class LabeledIcon extends StatelessWidget {
     this.axis = Axis.horizontal,
   });
 
-  factory LabeledIcon.vertical({
+  const factory LabeledIcon.vertical({
     required Widget icon,
     required Widget label,
     required double gap,
-  }) =>
-      VerticalLabeledIcon(icon: icon, label: label, gap: gap);
+  }) = VerticalLabeledIcon;
 
-  factory LabeledIcon.horizontal({
+  const factory LabeledIcon.horizontal({
     required Widget icon,
     required Widget label,
     required double gap,
-  }) =>
-      HorizontalLabeledIcon(icon: icon, label: label, gap: gap);
+  }) = HorizontalLabeledIcon;
 
   @override
   Widget build(BuildContext context) => switch (axis) {
         Axis.horizontal =>
-          HorizontalLabeledIcon(icon: icon, label: label, gap: gap),
+          LabeledIcon.horizontal(icon: icon, label: label, gap: gap),
         Axis.vertical =>
-          VerticalLabeledIcon(icon: icon, label: label, gap: gap),
+          LabeledIcon.vertical(icon: icon, label: label, gap: gap),
       };
 }
 
