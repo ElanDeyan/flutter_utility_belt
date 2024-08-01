@@ -1,4 +1,6 @@
 import 'package:flutter/widgets.dart';
+import 'package:flutter_utility_belt/widgets/horizontal_labeled_icon.dart';
+import 'package:flutter_utility_belt/widgets/vertical_labeled_icon.dart';
 
 /// The [LabeledIcon] class is a base class that extends [StatelessWidget].
 /// It defines properties for an [icon], a [gap], a [label], and an [axis].
@@ -37,50 +39,4 @@ base class LabeledIcon extends StatelessWidget {
         Axis.vertical =>
           LabeledIcon.vertical(icon: icon, label: label, gap: gap),
       };
-}
-
-/// It is responsible for displaying an [icon] and a [label] vertically with a
-/// specified [gap] between them.
-final class VerticalLabeledIcon extends LabeledIcon {
-  const VerticalLabeledIcon({
-    super.key,
-    required super.icon,
-    required super.label,
-    required super.gap,
-  }) : super(axis: Axis.vertical);
-
-  @override
-  Widget build(BuildContext context) => Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          icon,
-          SizedBox(
-            height: gap,
-          ),
-          label,
-        ],
-      );
-}
-
-/// The [HorizontalLabeledIcon] class is responsible for displaying an [icon]
-/// and a [label] horizontally with a specified [gap] between them.
-final class HorizontalLabeledIcon extends LabeledIcon {
-  const HorizontalLabeledIcon({
-    super.key,
-    required super.icon,
-    required super.label,
-    required super.gap,
-  }) : super(axis: Axis.horizontal);
-
-  @override
-  Widget build(BuildContext context) => Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          icon,
-          SizedBox(
-            width: gap,
-          ),
-          label,
-        ],
-      );
 }

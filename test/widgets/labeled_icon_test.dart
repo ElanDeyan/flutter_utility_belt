@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_utility_belt/widgets/horizontal_labeled_icon.dart';
 import 'package:flutter_utility_belt/widgets/labeled_icon.dart';
+import 'package:flutter_utility_belt/widgets/vertical_labeled_icon.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
