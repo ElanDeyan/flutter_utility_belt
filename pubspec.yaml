@@ -1,6 +1,7 @@
 name: flutter_utility_belt
-description: "A new Flutter package project."
+description: "Utilities for your flutter project."
 version: 0.0.1
+repository: https://github.com/ElanDeyan/flutter_utility_belt
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
