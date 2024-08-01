@@ -1,7 +1,11 @@
 name: flutter_utility_belt
 description: "Utilities for your flutter project."
-version: 0.0.1
+version: 0.1.0
 repository: https://github.com/ElanDeyan/flutter_utility_belt
+topics:
+  - flutter
+  - widgets
+  - helpers
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
