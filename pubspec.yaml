@@ -1,0 +1,23 @@
+name: flutter_utility_belt
+description: "Utilities for your flutter project."
+version: 0.1.0
+repository: https://github.com/ElanDeyan/flutter_utility_belt
+topics:
+  - flutter
+  - widgets
+  - helpers
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  dart_code_linter: ^1.1.3
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  lint: ^2.3.0
